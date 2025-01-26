@@ -11,4 +11,4 @@ function agregarAmigo() {
     nombre = '';
 }
 
-console.log(amigos);
+alert.log(amigos);
