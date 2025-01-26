@@ -9,6 +9,8 @@ function agregarAmigo() {
     } else {
         alert('Por favor, inserte un nombre.');
     }
+    let nombreLista = document.getElementById('listaAmigos');
+    nombreLista.innerHTML = 'nombre';
     nombre = '';
     alert(amigos);
 }
