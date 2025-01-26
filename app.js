@@ -12,4 +12,4 @@ function agregarAmigo() {
     nombre = '';
 }
 
-alert.log(amigos);
+alert(amigos);
