@@ -10,6 +10,5 @@ function agregarAmigo() {
         alert('Por favor, inserte un nombre.');
     }
     nombre = '';
+    alert(amigos);
 }
-
-alert(amigos);
