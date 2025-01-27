@@ -5,10 +5,10 @@ function agregarAmigo() {
     let nombre = document.getElementById('amigo').value;
     if (nombre != ""){
         amigos.push(nombre);
-        return nombre;
         let nombreLista = document.getElementById('listaAmigos');
         nombreLista.innerHTML = 'nombre';
         nombre = '';
+        return nombre;
     } else {
         alert('Por favor, inserte un nombre.');
     }
