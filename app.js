@@ -6,11 +6,11 @@ function agregarAmigo() {
     if (nombre != ""){
         amigos.push(nombre);
         return nombre;
+        let nombreLista = document.getElementById('listaAmigos');
+        nombreLista.innerHTML = 'nombre';
+        nombre = '';
     } else {
         alert('Por favor, inserte un nombre.');
     }
-    let nombreLista = document.getElementById('listaAmigos');
-    nombreLista.innerHTML = 'nombre';
-    nombre = '';
     alert(amigos);
 }
