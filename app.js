@@ -6,7 +6,7 @@ function agregarAmigo() {
     if (nombre != ""){
         amigos.push(nombre);
         let nombreLista = document.getElementById('listaAmigos');
-        nombreLista.innerHTML = 'nombre';
+        nombreLista.innerHTML = nombre;
         nombre = '';
         return nombre;
     } else {
