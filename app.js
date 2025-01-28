@@ -15,7 +15,7 @@ let amigos = [];
 } */
 
 function vaciarNombre() {
-    document.getElementById('listaAmigos').value='';
+    document.getElementById('amigo').value='';
 }
 
 function agregarAmigo() {
