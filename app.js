@@ -23,7 +23,7 @@ function agregarAmigo() {
     if (nombre != "") {
         amigos.push(nombre);
         mostrarNombre();
-        nombre = '';
+        vaciarNombre();
     } else {
         alert('Por favor, inserte un nombre.');
     }
