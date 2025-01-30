@@ -18,6 +18,8 @@ function vaciarNombre() {
 
 function mostrarNombre() {
     let nombreLista = document.getElementById('listaAmigos');
-    let ultimoAmigo = amigos[amigos.length-1];
-    nombreLista.insertAdjacentHTML('beforeend', `<li>${ultimoAmigo}</li>`);
+    nombreLista.innerHTML = "";
+    for(let i = 0; i < amigos.length; i++) {
+        nombreLista.insertAdjacentHTML('beforeend', `<li>${amigos[i]}</li>`);
+    }
 }
