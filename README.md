@@ -1,5 +1,6 @@
-# Amigo Secreto
+<h1 align="center"> Amigo Secreto </h1>
 
+![Imagen del Juego](assets/juego.png)
 Este es un juego simple de Amigo Secreto desarrollado con HTML5, CSS y JavaScript.
 
 ## Descripción
@@ -9,8 +10,11 @@ El juego permite a los usuarios ingresar los nombres de los participantes para r
 ## Funcionalidades
 
 - Ingresar nombres de los participantes.
+![Ingresar nombre](assets/ingresar-nombre.png)
 - Visualizar la lista de participantes en tiempo real.
+![Lista de Participantes](assets/lista.png)
 - Realizar el sorteo y mostrar el nombre seleccionado en pantalla.
+![Resultado](assets/resultado.png)
 
 ## Tecnologías utilizadas
 
