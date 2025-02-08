@@ -22,6 +22,7 @@ El juego permite a los usuarios ingresar los nombres de los participantes para r
     - Customizar tipo de juego.
         - Amigo secreto.
         - Pago de cuenta.
+            - Funcionalidad extra: Dividir y/o entregar el valor a pagar por cada sorteado.
         - Número Random.
         - Tema personalizado.
             - Color de Fondo.
