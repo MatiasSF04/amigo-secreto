@@ -12,26 +12,40 @@
 
 <body>
     <nav>
-        <button class="menu-btn">&equiv;</button>
+        <div class="menu">
+            <button class="menu__btn__cerrar">X</button>
+            <ul>
+                <li><button class="menu__btn__seleccion">Amigo Secreto</button></li>
+                <li><button class="menu__btn__seleccion">Sortear Cuenta</button></li>
+                <li><button class="menu__btn__seleccion">Sortear Número</button></li>
+                <li><button class="menu__btn__seleccion">Personalizar</button></li>
+            </ul>
+        </div>
     </nav>
-    <main class="main-content">
-        <header class="header-banner">
-            <h1 class="main-title">Amigo Secreto</h1>
+
+    <main class="main__content">
+
+        <section class="menu__btn">
+            <button class="menu__btn__abrir" onclick="mostrarMenu()">&equiv;</button>
+        </section>
+
+        <header class="header__banner">
+            <h1 class="main__title">Amigo Secreto</h1>
             <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
         </header>
         
-        <section class="input-section">
-            <h2 class="section-title">Digite el nombre de sus amigos</h2>
-            <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
-                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+        <section class="input__section">
+            <h2 class="section__title">Digite el nombre de sus amigos</h2>
+            <div class="input__wrapper">
+                <input type="text" id="amigo" class="input__name" placeholder="Escribe un nombre">
+                <button class="button__add" onclick="agregarAmigo()">Añadir</button>
             </div>
            
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+            <ul id="listaAmigos" class="name__list" aria-labelledby="listaAmigos" role="list"></ul>
+            <ul id="resultado" class="result__list" aria-live="polite"></ul>
 
-            <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+            <div class="button__container">
+                <button class="button__draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
                     <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
                     Sortear amigo
                 </button>

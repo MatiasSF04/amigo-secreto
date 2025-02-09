@@ -16,19 +16,65 @@
     box-sizing: border-box;
 }
 
-.menu-btn {
-    font-size: 50px;
-    color: var(--color-text);
-    padding: none;
-    background-color: var(--color-tertiary);
+.menu {
     position: fixed;
-    top: 2%;
-    left: 1%;
-
+    width: 280px;
+    height: 100vh;
+    /* left: -280px; */
 }
 
-.menu-btn:hover {
+.menu ul {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    display: block;
+    gap: 100px;
+}
+
+.menu__btn__abrir {
+    font-size: 50px;
+    background-size: 10% 10%;
+    color: var(--color-text);
+    background-color: var(--color-tertiary);
+    
+    width: 29px;
+    line-height: 27px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    padding: none;
+    gap: 8px;
+    
+}
+
+nav {
     background-color: var(--color-hover);
+}
+
+nav button {
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    color: var(--color-white);
+    background: none;
+    border: none;
+    padding: none;
+    margin: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    color: var(--color-text);
+}
+
+.menu__btn__cerrar {
+    left: 240px;
+    top: 5px;
 }
 
 body {
@@ -39,15 +85,14 @@ body {
     align-items: center;
 }
 
-.main-content {
+.main__content {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
 }
 
-/* Banner */
-.header-banner {
+.header__banner {
     flex: 40%;
     display: flex;
     justify-content: center;
@@ -55,8 +100,7 @@ body {
     padding: 40px 0 0;
 }
 
-/* Sección de entrada */
-.input-section {
+.input__section {
     flex: 60%;
     background-color: var(--color-secondary);
     border: 1px solid #000;
@@ -68,8 +112,7 @@ body {
     width: 100%;
 }
 
-/* Títulos */
-.main-title {
+.main__title {
     font-size: 48px;
     font-family: "Merriweather", serif;
     font-weight: 900;
@@ -77,7 +120,7 @@ body {
     color: var(--color-white);
 }
 
-.section-title {
+.section__title {
     font-family: "Inter", serif;
     font-size: 36px;
     font-weight: 700;
@@ -87,7 +130,7 @@ body {
 }
 
 /* Contenedores de entrada y botón */
-.input-wrapper {
+.input__wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -95,7 +138,7 @@ body {
     margin-top: 20px;
 }
 
-.input-name {
+.input__name {
     width: 100%;
     padding: 10px;
     border: 2px solid #000;
@@ -103,13 +146,13 @@ body {
     font-size: 16px;
 }
 
-.button-container {
+.button__container {
     width: 300px;
     justify-content: center;
 }
 
 /* Estilos de entrada de texto */
-.input-title {
+.input__title {
     flex: 1;
     padding: 10px 15px;
     font-size: 16px;
@@ -121,7 +164,7 @@ body {
 }
 
 /* Estilos de botón */
-button {
+main button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -131,18 +174,18 @@ button {
     cursor: pointer;
 }
 
-.button-add {
+.button__add {
     background-color: var(--color-tertiary);
     color: var(--color-text);
     border-radius: 0 25px 25px 0;
 }
 
-.button-add:hover {
+main button:hover {
     background-color: var(--color-hover);
 }
 
 /* Listas */
-ul {
+section ul {
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
@@ -150,7 +193,7 @@ ul {
     margin: 20px 0;
 }
 
-.result-list {
+.result__list {
     margin-top: 15px;
     color: #05DF05;
     font-size: 22px;
@@ -159,7 +202,7 @@ ul {
 }
 
 /* Botón de sortear título */
-.button-draw {
+.button__draw {
     display: flex;
     align-items: center;
     width: 100%;
@@ -169,10 +212,10 @@ ul {
     font-size: 16px;
 }
 
-.button-draw img {
+.button__draw img {
     margin-right: 40px;
 }
 
-.button-draw:hover {
+.button__draw:hover {
     background-color: var(--color-button-hover);
 }
